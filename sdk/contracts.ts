@@ -54,6 +54,9 @@ export enum SupportedNetworks {
   HardhatNetwork = 31337,
   LineaGoerli = 59140,
   Sepolia = 11155111,
+  Moonbeam = 1284,
+  Moonriver = 1285,
+  Moonbase = 1287,
 }
 
 // const canonicalMasterCopyAddress = (contract: KnownContracts) => {
@@ -208,6 +211,10 @@ export const ContractVersions: Record<
   },
   [SupportedNetworks.LineaGoerli]: CanonicalAddresses,
   [SupportedNetworks.Sepolia]: CanonicalAddresses,
+  // Moonbeam, Moonriver, and Moonbase
+  [SupportedNetworks.Moonbeam]: CanonicalAddresses,
+  [SupportedNetworks.Moonriver]: CanonicalAddresses,
+  [SupportedNetworks.Moonbase]: CanonicalAddresses,
 };
 
 /** Addresses of the head versions of all contracts */

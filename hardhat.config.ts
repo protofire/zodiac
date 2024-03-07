@@ -109,6 +109,18 @@ export default {
       ...sharedNetworkConfig,
       url: `https://linea-goerli.infura.io/v3/${INFURA_KEY}`,
     },
+    moonbase: {
+      ...sharedNetworkConfig,
+      url: "https://moonbase.unitedbloc.com",
+    },
+    moonriver: {
+      ...sharedNetworkConfig,
+      url: "https://moonriver.unitedbloc.com:2000",
+    },
+    moonbeam: {
+      ...sharedNetworkConfig,
+      url: "https://rpc.api.moonbeam.network",
+    },
   },
   namedAccounts: {
     deployer: 0,
